@@ -1,0 +1,16 @@
+[version]
+signature="$CHICAGO$"
+
+[DefaultInstall.ntamd64]
+AddReg=SteamClient.ntamd64
+
+[SteamClient.ntamd64]
+;;Workaround for the Touhou: use metric-compatible fonts with MS Japanese fonts.
+HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"@MS Gothic",,"@Ume Gothic"
+HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"@MS PGothic",,"@Ume P Gothic"
+HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"@ＭＳ ゴシック",,"@Ume Gothic"
+HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"@ＭＳ Ｐゴシック",,"@Ume P Gothic"
+HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"MS Gothic",,"Ume Gothic"
+HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"MS PGothic",,"Ume P Gothic"
+HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"ＭＳ ゴシック",,"Ume Gothic"
+HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"ＭＳ Ｐゴシック",,"Ume P Gothic"

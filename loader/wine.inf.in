@@ -4085,6 +4085,7 @@ srgb color space profile.icm,"@mscms.dll,-1"
 winebus.inf,"@winebus.sys,-1"
 winehid.inf,"@winehid.sys,-1"
 wineusb.inf,"@wineusb.sys,-1"
+proton_u16.inf
 
 [NlsFiles]
 c_037.nls
@@ -4243,6 +4244,15 @@ HKCU,Software\Wine\AppDefaults\RelicCardinal.exe\DllOverrides,"atiadlxx",,"built
 HKCU,Software\Wine\AppDefaults\msedgewebview2.exe,"Version",,"win81"
 HKCU,Software\Wine\AppDefaults\ForzaHorizon5.exe\DllOverrides,"amd_ags_x64",0x2,"builtin"
 HKCU,Software\Wine\AppDefaults\Avengers.exe\DllOverrides,"atiadlxx",,"builtin"
+;;Workaround for the Touhou: use metric-compatible fonts with MS Japanese fonts.
+;;HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"@MS Gothic",,"@Ume Gothic"
+;;HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"@MS PGothic",,"@Ume P Gothic"
+;;HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"@\xff2d\xff33 \x30b4\x30b7\x30c3\x30af",,"@Ume Gothic"
+;;HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"@\xff2d\xff33 \xff30\x30b4\x30b7\x30c3\x30af",,"@Ume P Gothic"
+;;HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"MS Gothic",,"Ume Gothic"
+;;HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"MS PGothic",,"Ume P Gothic"
+;;HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"\xff2d\xff33 \x30b4\x30b7\x30c3\x30af",,"Ume Gothic"
+;;HKCU,Software\Wine\AppDefaults\th10.exe\Fonts\Replacements,"\xff2d\xff33 \xff30\x30b4\x30b7\x30c3\x30af",,"Ume P Gothic"
 ;;Likely want *80 and *90 too, but those require removing Wine's manifest files.
 HKCU,Software\Wine\DllOverrides,"atl100",0x2,"native,builtin"
 HKCU,Software\Wine\DllOverrides,"msvcp100",0x2,"native,builtin"

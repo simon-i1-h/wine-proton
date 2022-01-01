@@ -4209,6 +4209,7 @@ else
     TOP_INSTALL_LIB="$TOP_INSTALL_LIB \
 fonts \
 loader/wine.inf \
+loader/proton_u16.inf \
 nls \
 programs/msidb/msidb \
 programs/msiexec/msiexec \
